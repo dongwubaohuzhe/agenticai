@@ -1,0 +1,52 @@
+site_name: agenticai
+repo_url: https://github.com/dongwubaohuzhe/agenticai
+site_url: https://dongwubaohuzhe.github.io/agenticai
+site_description: This is all about multi-agents
+site_author: sanjeev
+edit_uri: edit/main/docs/
+repo_name: dongwubaohuzhe/agenticai
+copyright: Maintained by <a href="https://dongwubaohuzhe.com">dongwubaohuzhe</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/agenticai"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dongwubaohuzhe/agenticai
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/agenticai
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
