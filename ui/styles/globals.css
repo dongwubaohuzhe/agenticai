@@ -49,6 +49,25 @@ body {
   animation: fadeIn 0.3s ease-in-out;
 }
 
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideInUp 0.5s ease-out;
+}
+
 /* Custom components */
 .flight-card {
   @apply bg-white rounded-lg shadow p-4 hover:shadow-md transition-shadow duration-200;
